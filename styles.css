@@ -9,15 +9,15 @@ section{
 	vertical-align: baseline;
 }
 h1{
-    font-size: 50px;
-    color: rgb(157, 255, 0);
+    font-size: 45px;
+    color: rgb(58, 94, 2);
     font-family: 'Times New Roman', Times, serif;
     font-weight: 900;
     margin-left: 200px;
     
 }
 h2{
-    font-size: 30px;
+    font-size: 26px;
     font-family: 'Times New Roman', Times, serif;
     margin-left: 200px;
 }
@@ -25,11 +25,10 @@ h2{
     width: 0%;
     height: 0;
     border-left: 200px solid transparent;
-    border-right: 350px solid rgb(157, 255, 0);
+    border-right: 350px solid rgb(58, 94, 2);
     border-bottom: 200px solid transparent;
     margin-left: 60%;
     margin-top: -1.7%;
-    overflow: hidden;
 }
 
 /*Banner styles*/
@@ -43,27 +42,32 @@ h2{
     padding: 10px;
 }
 .Content{
-    margin-top: -12%;
+    margin-top: -6%;
 }
-img{
-    height: 250px;
-    width: 250px;
-    border-radius: 50%;
-    margin-left: 22%;
+.Content img{
+    height: 200px;
+    width: 200px;
+    border-radius: 25px 25px;
+    margin-left: 80%;
+    margin-top: -200px;
+    box-shadow: 0 4px 8px 0 rgb(4, 7, 0);
 }
 .Paragraph{
     width: 60%;
-    margin-left: 200px;
     font-family: 'Times New Roman', Times, serif;
     font-size: 18px;
-    margin-top: 30px;
+    margin-top: 10px;
+}
+.Card1{
+    margin: 50px 200px 0;
+    box-shadow: 0 4px 8px 0 rgb(4, 7, 0);
+    width: 50%;
+    padding: 20px;
 }
 span{
-    background-color: rgb(157, 255, 0);
+    background-color: rgb(58, 94, 2);
     border-radius: 0 5px;
     padding: 5px;
-    color: #181818;
-    text-shadow: rgb(212, 210, 210) 0px 1px;
 }
 
 /*About*/
@@ -74,18 +78,13 @@ span{
     align-items: center;
 }
 .Heading{
-    line-height: 0%;
-    text-transform: uppercase;
-    margin-top: 3rem;
-}
-
-.Heading{
     text-align: center;
     text-transform: uppercase;
     line-height: 0;
     margin-bottom: 6rem;
     font-family:  'Times New Roman', Times, serif;
     padding-top: 20px;
+    margin-top: 3rem;
 }
 .Heading h3{
     font-size: 5rem;
@@ -95,11 +94,11 @@ span{
 .Heading h6{
     font-size: 2rem;
     font-weight: 300;
-    color: rgb(157, 255, 0);  
+    color: rgb(58, 94, 2);  
     text-shadow: rgb(22, 22, 22) 0px 1px;
 }
 .About h4{
-    color: #181818;
+    color: rgb(58, 94, 2);
     font-size: 18px;
     font-family: 'Times New Roman', Times, serif;
     margin-left: 20%;
@@ -118,7 +117,7 @@ span{
 
 /*Skills*/
 .Skills{
-    background: radial-gradient(circle,#181818, rgb(157, 225, 0), #181818);
+    background: radial-gradient(circle,#181818, rgb(58, 94, 2), #181818);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -127,13 +126,12 @@ span{
     margin: 30px 0 50px 130px;
     border-top-left-radius: 50%;
     border-bottom-right-radius: 50%;
+    text-shadow: rgb(22, 22, 22) 0px 1px;
 }
 .Skills h4{
     font-size: 2rem;
     font-family: 'Times New Roman', Times, serif;
     padding-top: 20px;
-    color: rgb(157, 255, 0);
-    text-shadow: rgb(17, 17, 17) 0px 1px;
 }
 .Tools{
     display: flex;
@@ -182,12 +180,14 @@ h4{
     padding-top: 20px;
 }
 h6{
-    color: rgb(157, 255, 0);
+    color:rgb(58, 94, 2);
     font-size: 16px;
 }
-.Text{
+.Card{
     margin: 20px 0;
-    
+    box-shadow: 0 4px 8px 0 rgb(3, 7, 0);
+    width: 70%;
+    padding: 20px;
 }
 
 /*Education*/
@@ -203,7 +203,7 @@ h6{
 
 /*Footer*/
 footer{
-    background: radial-gradient(circle,#181818, rgb(157, 225, 0), #181818);
+    background: radial-gradient(circle,#181818, rgb(58,94,2), #181818);
     height: 300px;
     display: flex;
     flex-direction: column;
@@ -223,17 +223,10 @@ a{
 .Social{
     margin-top: -60px;
 }
-.Social img{
-    width: 100px;
-    height: 100px;
-   
-}
 .fa{
     padding: 20px;
     color: #181818;
     text-align: center;
-    font-size: 30px;
-    
 }
 .Logo{
     display: flex;
@@ -244,6 +237,10 @@ a{
 .Logo p{
     font-size: 14px;
 }
+.Logo img{
+    border-radius: 25px 25px;
+    box-shadow: 0 4px 8px 0 rgb(4, 7, 0);
+}
 
 /*Media Queries*/
 @media only screen and (max-width: 600px){
@@ -252,7 +249,7 @@ a{
         margin-left: 5.5%;
         margin-top: -2.5%;
         border-left: 150px solid transparent;
-        border-right: 250px solid rgb(157, 255, 0);
+        border-right: 250px solid rgb(61, 97, 3);
         border-bottom: 150px solid transparent;
     }
 
@@ -260,15 +257,25 @@ a{
         height: 540px;
     }
     .Content{
-        margin-top: -14%;
+        margin-top: -20%;
+    }
+    .Card1{
+        margin-left: 50px;
+        width: 60%;
+    }
+    .Content img{
+        height: 150px;
+        width: 150px;
+        margin: 10px  110px ;
     }
     h1{
         font-size: 30px;
-        margin-left: 20px;
+        margin-left: 25px;
+        color: #fafafa;
     }
     h2{
-        font-size: 20px;
-        margin-left: 20px;
+        font-size: 18px;
+        margin-left: 46px;
     }
     
    .Paragraph{
@@ -287,26 +294,39 @@ a{
         border-top-left-radius: 0%;
         border-bottom-right-radius: 0%;
     }
-    .Experience, .Education{
-        margin-left: 20px;
+    .Skills h4{
+        font-size: 26px;
+        padding-bottom: 20px;
     }
+    .Soft-skills{
+        padding-left: 10px;
+    }
+    .Soft-skills li{
+        font-size: 16px;
+    }
+    .Tools ul li{
+        font-size: 18px;
+    }
+    .Experience, .Education{
+        margin-left: 25px;
+    }
+    .Card{
+        margin: 20px 25px; 
+    } 
     h4{
-    font-size: 26px;
+        font-size: 26px;
+        margin-left: 25px;
     }
     p{
         font-size: 16px;
     }
     footer h4{
         padding-top: -20px;
-        height: 400px;
+        font-size: 26px;
     }
     
     .Social{
         margin-top: -50px;
     }
-    .Social img{
-        width: 80px;
-        height: 80px;
-   
-    }
+
 }
