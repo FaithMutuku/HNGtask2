@@ -332,6 +332,9 @@ a{
         display: flex;
         flex-direction: row;
     }
+    .Logo p{
+        padding-top: 20px;
+    }
     .Logo img{
         height: 50px;
         width: 50px;
