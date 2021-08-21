@@ -328,5 +328,9 @@ a{
     .Social{
         margin-top: -50px;
     }
+    .Logo img{
+        height: 50px;
+        width: 50px;
+    }
 
 }
