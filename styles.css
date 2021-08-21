@@ -328,6 +328,10 @@ a{
     .Social{
         margin-top: -50px;
     }
+    .Logo{
+        display: flex;
+        flex-direction: row;
+    }
     .Logo img{
         height: 50px;
         width: 50px;
