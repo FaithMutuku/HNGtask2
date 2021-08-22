@@ -7,6 +7,7 @@ section{
 	color: #fafafa;
 	border: 0;
 	vertical-align: baseline;
+    
 }
 h1{
     font-size: 45px;
@@ -21,29 +22,34 @@ h2{
     font-family: 'Times New Roman', Times, serif;
     margin-left: 200px;
 }
+.Header{
+    width: 100vw;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 0%;
+}
 .Triangle{
     width: 0%;
     height: 0;
     border-left: 200px solid transparent;
     border-right: 350px solid rgb(58, 94, 2);
     border-bottom: 200px solid transparent;
-    margin-left: 60%;
-    margin-top: -1.7%;
 }
 
 /*Banner styles*/
 .Banner{
-    width: 100%;
+    width: 100vw;
     height: 480px;
     background: linear-gradient(to right, #111111, #181818);
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+    justify-content: center;
     padding: 10px;
+    overflow: hidden;
+    margin-top: -200px;
 }
-.Content{
-    margin-top: -6%;
-}
+
 .Content img{
     height: 200px;
     width: 200px;
@@ -56,7 +62,7 @@ h2{
     width: 60%;
     font-family: 'Times New Roman', Times, serif;
     font-size: 18px;
-    margin-top: 10px;
+    padding: 10px;
 }
 .Card1{
     margin: 50px 200px 0;
@@ -69,6 +75,8 @@ span{
     border-radius: 0 5px;
     padding: 5px;
     background-color: #fafafa;
+    text-shadow: 0 4px 8px 0 rgb(4, 7, 0);
+  
 }
 
 /*About*/
@@ -127,11 +135,13 @@ span{
     margin: 30px 0 50px 130px;
     border-radius: 5%;
     text-shadow: rgb(22, 22, 22) 0px 1px;
+    overflow: hidden;
 }
 .Skills h4{
     font-size: 2rem;
     font-family: 'Times New Roman', Times, serif;
     padding-top: 20px;
+   
 }
 .Tools{
     display: flex;
@@ -164,6 +174,8 @@ span{
 /*Experience*/
 .Professional-exp{
     background: linear-gradient(to right, #111111, #181818);
+    overflow: hidden;
+    width: 100vw;
 }
 .Experience{
     display: flex;
@@ -186,7 +198,7 @@ h6{
     margin: 20px 0;
     box-shadow: 0 4px 8px 0 rgb(3, 7, 0);
     width: 70%;
-    padding: 20px;
+    padding: 20px;  
 }
 
 /*Education*/
@@ -197,16 +209,20 @@ h6{
     flex-direction: column;
     font-family: 'Times New Roman', Times, serif;
     padding-bottom: 30px;
+    overflow: hidden;
+    width: 100vw;
 }
 
 /*Footer*/
 footer{
     background: radial-gradient(circle,#181818, rgb(58,94,2), #181818);
     height: 300px;
+    width: 100vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 footer h4{
     text-shadow: #181818 0px 1px;
@@ -224,7 +240,7 @@ a{
 .fa{
     padding: 20px;
     color: #181818;
-    text-align: center;
+    text-align: center;    
 }
 .Logo{
     display: flex;
@@ -236,47 +252,44 @@ a{
     font-size: 14px;
 }
 .Logo img{
-    border-radius: 25px 25px;
-    box-shadow: 0 4px 8px 0 rgb(4, 7, 0);
     height: 80px;
     width: 80px;
+    border-radius: 25px 25px;
+    box-shadow: 0 4px 8px 0 rgb(4, 7, 0);
 }
 
+
 /*Media Queries*/
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 576px){
+
      
     .Triangle{
-        margin-left: 5.5%;
-        margin-top: -2.5%;
-        border-left: 150px solid transparent;
-        border-right: 250px solid rgb(61, 97, 3);
-        border-bottom: 150px solid transparent;
+        border-left: 100px solid transparent;
+        border-right: 200px solid rgb(61, 97, 3);
+        border-bottom: 100px solid transparent;
     }
 
     .Banner{
-        height: 540px;
+        height: 620px;
+        
     }
-    .Content{
-        margin-top: -20%;
-    }
+   
     .Card1{
-        margin-left: 50px;
         width: 60%;
-        margin-top: 30px;
     }
     .Content img{
-        height: 180px;
-        width: 180px;
-        margin: 10px  110px ;
+        height: 160px;
+        width: 160px;
+        margin: 10px  110px;
     }
     h1{
-        font-size: 32px;
-        margin-left: 25px;
+        font-size: 30px;
+        margin-top: 40%;
         color: #fafafa;
     }
     h2{
         font-size: 18px;
-        margin-left: 46px;
+        
     }
     
    .Paragraph{
@@ -298,20 +311,20 @@ a{
         font-size: 26px;
         padding-bottom: 20px;
     }
+   .Tools ul li{
+        font-size: 18px;
+    }
     .Soft-skills{
         padding-left: 10px;
     }
     .Soft-skills li{
         font-size: 16px;
     }
-    .Tools ul li{
-        font-size: 18px;
-    }
     .Card{
-        margin: 20px 25px; 
+       margin: 20px 25px; 
     } 
     h4{
-        font-size: 24px;
+       font-size: 24px;
     }
     p{
         font-size: 16px;
@@ -320,22 +333,207 @@ a{
         padding-top: -20px;
         font-size: 24px;
     }
-    
-    .Social{
-        margin-top: -50px;
-    }
     .Logo{
         display: flex;
         flex-direction: row;
-        align-items: center;
         margin-top: 30px;
     }
     .Logo p{
         padding-top: 20px;
     }
     .Logo img{
-        height: 40px;
-        width: 40px;
+        height: 50px;
+        width: 50px;
     }
 
+}
+
+@media screen and (max-width: 768px) {
+    
+    .Triangle{
+        border-left: 150px solid transparent;
+        border-right: 250px solid rgb(61, 97, 3);
+        border-bottom: 150px solid transparent;
+    }
+
+    .Banner{
+        height: 540px;
+    }
+   
+    .Card1{
+        width: 60%;
+    }
+    .Content img{
+        height: 200px;
+        width: 200px;
+        margin: 10px  300px ;
+    }
+    h1{
+        font-size: 32px;
+        margin-top: 80px;
+        color: rgb(58, 94, 2);
+    }
+    h2{
+        font-size: 18px;
+    }
+   
+   .Paragraph{
+       width: 80%;
+    }
+    
+   .About-details{
+        width: 80%;
+        margin-left: 10%;
+    }
+    .Skills{
+        width: 100%;
+        height: 400px;
+        margin-left: 0px;
+        border-radius: 0%;
+    }
+    .Skills h4{
+        font-size: 26px;
+        padding-bottom: 20px;
+    }
+   .Tools ul li{
+        font-size: 18px;
+    }
+    .Soft-skills{
+        padding-left: 10px;
+    }
+    .Soft-skills li{
+        font-size: 16px;
+    }
+    .Card{
+       margin: 20px 25px;
+    } 
+    h4{
+       font-size: 24px;
+    }
+    p{
+        font-size: 16px;
+    }
+    footer h4{
+        padding-top: -20px;
+        font-size: 24px;
+    }
+    .Logo{
+        display: flex;
+        flex-direction: row;
+        margin-top: 30px;
+    }
+    .Logo p{
+        padding-top: 20px;
+    }
+    .Logo img{
+        height: 50px;
+        width: 50px;
+    }
+} 
+
+
+@media only screen and (max-width: 992px){
+    .Triangle{
+        margin-left: 5.5%;
+        margin-top: -2.78%;
+        border-left: 150px solid transparent;
+        border-right: 250px solid rgb(61, 97, 3);
+        border-bottom: 150px solid transparent;
+    }
+
+    .Banner{
+        height: 540px;
+    }
+   
+    .Card1{
+        margin-left: 50px;
+        width: 60%;
+        margin-top: 30px;
+    }
+    .Content img{
+        height: 180px;
+        width: 180px;
+        margin: 10px  110px ;
+    }
+    h1{
+        font-size: 32px;
+        margin-left: 30px;
+        color: #fafafa;
+    }
+    h2{
+        font-size: 18px;
+        margin-left: 57px;
+    }
+    
+   .Paragraph{
+       width: 80%;
+       margin-left: 20px;
+    }
+    
+   .About-details{
+        width: 80%;
+        margin-left: 10%;
+    }
+    .Skills{
+        width: 100%;
+        height: 400px;
+        margin-left: 0px;
+        border-radius: 0%;
+    }
+    .Skills h4{
+        font-size: 26px;
+        padding-bottom: 20px;
+    }
+   .Tools ul li{
+        font-size: 18px;
+    }
+    .Soft-skills{
+        padding-left: 10px;
+    }
+    .Soft-skills li{
+        font-size: 16px;
+    }
+    .Card{
+       margin: 20px 25px; 
+    } 
+    h4{
+       font-size: 24px;
+    }
+    p{
+        font-size: 16px;
+    }
+    footer h4{
+        padding-top: -20px;
+        font-size: 24px;
+    }
+    .Logo{
+        display: flex;
+        flex-direction: row;
+        margin-top: 30px;
+    }
+    .Logo p{
+        padding-top: 20px;
+    }
+    .Logo img{
+        height: 50px;
+        width: 50px;
+    }
+}
+
+
+@media only screen and (max-width: 1200px){
+
+    .Banner{
+        height: 540px;
+        overflow: hidden;
+    }
+    .Card1{
+        width: 60%;
+        margin-left: 40px;
+    }
+    
+   .Paragraph{
+       width: 80%;
+    }
+   
 }
