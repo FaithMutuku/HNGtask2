@@ -213,6 +213,49 @@ h6{
     width: 100vw;
 }
 
+/*Projects*/
+.Projects{
+    background: linear-gradient(to right, #111111, #181818);
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Times New Roman', Times, serif;
+    padding-bottom: 30px;
+    overflow: hidden;
+}
+.Card2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px 0 rgb(3, 7, 0);
+    width: 70%;
+    padding: 28px; 
+}
+.Card2 img{
+    width: 100%;
+    height: auto;
+    border-radius: 5%;
+    padding: none;
+}
+.Text{
+    width: 50%;
+}
+.Btn{
+    background-color: rgb(58, 94, 2);
+    color: #fafafa;
+    padding: 10px;
+    border-radius: 50%;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 14px;
+    font-weight: bolder;
+    margin-top: 22px;
+    box-shadow: 0 4px 4px 0 rgb(250, 250, 249);
+}
+
 /*Footer*/
 footer{
     background: radial-gradient(circle,#181818, rgb(58,94,2), #181818);
@@ -323,6 +366,9 @@ a{
     .Card{
        margin: 20px 25px; 
     } 
+    .Text{
+       width: 100%;
+    }
     h4{
        font-size: 24px;
     }
@@ -347,7 +393,6 @@ a{
     }
 
 }
-
 @media screen and (max-width: 768px) {
     
     .Triangle{
@@ -432,10 +477,10 @@ a{
 } 
 
 
+
+
 @media only screen and (max-width: 992px){
     .Triangle{
-        margin-left: 5.5%;
-        margin-top: -2.78%;
         border-left: 150px solid transparent;
         border-right: 250px solid rgb(61, 97, 3);
         border-bottom: 150px solid transparent;
@@ -444,9 +489,8 @@ a{
     .Banner{
         height: 540px;
     }
-   
+  
     .Card1{
-        margin-left: 50px;
         width: 60%;
         margin-top: 30px;
     }
@@ -535,5 +579,6 @@ a{
    .Paragraph{
        width: 80%;
     }
-   
+  
 }
+
