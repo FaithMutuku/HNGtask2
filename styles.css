@@ -65,9 +65,10 @@ h2{
     padding: 20px;
 }
 span{
-    background-color: rgb(58, 94, 2);
+    color: rgb(58, 94, 2);
     border-radius: 0 5px;
     padding: 5px;
+    background-color: #fafafa;
 }
 
 /*About*/
@@ -124,8 +125,7 @@ span{
     flex-direction: column;
     width: 80%;
     margin: 30px 0 50px 130px;
-    border-top-left-radius: 50%;
-    border-bottom-right-radius: 50%;
+    border-radius: 5%;
     text-shadow: rgb(22, 22, 22) 0px 1px;
 }
 .Skills h4{
@@ -168,10 +168,9 @@ span{
 .Experience{
     display: flex;
     justify-content: center;
-    align-items: left;
+    align-items: center;
     flex-direction: column;
     font-family: 'Times New Roman', Times, serif;
-    margin-left: 200px;
 }
 h4{
     font-size: 2rem;
@@ -180,7 +179,7 @@ h4{
     padding-top: 20px;
 }
 h6{
-    color:rgb(58, 94, 2);
+    color: rgb(26, 117, 3);
     font-size: 16px;
 }
 .Card{
@@ -194,10 +193,9 @@ h6{
 .Education{
     display: flex;
     justify-content: center;
-    align-items: left;
+    align-items: center;
     flex-direction: column;
     font-family: 'Times New Roman', Times, serif;
-    margin-left: 200px;
     padding-bottom: 30px;
 }
 
@@ -240,6 +238,8 @@ a{
 .Logo img{
     border-radius: 25px 25px;
     box-shadow: 0 4px 8px 0 rgb(4, 7, 0);
+    height: 80px;
+    width: 80px;
 }
 
 /*Media Queries*/
@@ -262,14 +262,15 @@ a{
     .Card1{
         margin-left: 50px;
         width: 60%;
+        margin-top: 30px;
     }
     .Content img{
-        height: 150px;
-        width: 150px;
+        height: 180px;
+        width: 180px;
         margin: 10px  110px ;
     }
     h1{
-        font-size: 30px;
+        font-size: 32px;
         margin-left: 25px;
         color: #fafafa;
     }
@@ -291,8 +292,7 @@ a{
         width: 100%;
         height: 400px;
         margin-left: 0px;
-        border-top-left-radius: 0%;
-        border-bottom-right-radius: 0%;
+        border-radius: 0%;
     }
     .Skills h4{
         font-size: 26px;
@@ -307,22 +307,18 @@ a{
     .Tools ul li{
         font-size: 18px;
     }
-    .Experience, .Education{
-        margin-left: 25px;
-    }
     .Card{
         margin: 20px 25px; 
     } 
     h4{
-        font-size: 26px;
-        margin-left: 25px;
+        font-size: 24px;
     }
     p{
         font-size: 16px;
     }
     footer h4{
         padding-top: -20px;
-        font-size: 26px;
+        font-size: 24px;
     }
     
     .Social{
@@ -338,8 +334,8 @@ a{
         padding-top: 20px;
     }
     .Logo img{
-        height: 50px;
-        width: 50px;
+        height: 40px;
+        width: 40px;
     }
 
 }
